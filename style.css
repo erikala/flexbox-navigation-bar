@@ -1,0 +1,92 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #545556;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.7em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+  font-weight: bolder;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #6c6e70;
+	font-size: 1.125em;
+}
+
+.main-nav a:hover {
+	color: #376a9e;
+}
+
+.header {
+	padding-top: .8em;
+	padding-bottom: .8em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+  -webkit-box-shadow: -1px 4px 14px -5px rgba(0,0,0,0.75); /*https://www.cssmatic.com/box-shadow */
+  -moz-box-shadow: -1px 4px 14px -5px rgba(0,0,0,0.75);
+  box-shadow: -1px 4px 14px -5px rgba(0,0,0,0.75);
+}
+
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
